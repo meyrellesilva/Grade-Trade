@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Grade Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Grade Tracker</h1>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <h2>Adicionar Disciplina</h2>
+      <form>
+        <label for="nome">Nome da disciplina:</label>
+        <input type="text" id="nome" name="nome" required>
+  
+        <label for="codigo">Código da disciplina:</label>
+        <input type="text" id="codigo" name="codigo" required>
+  
+        <label for="professor">Nome do professor:</label>
+        <input type="text" id="professor" name="professor" required>
+  
+        <label for="dataInicio">Data de início da disciplina:</label>
+        <input type="date" id="dataInicio" name="dataInicio" required>
+  
+        <label for="dataFim">Data de fim da disciplina:</label>
+        <input type="date" id="dataFim" name="dataFim" required>
+  
+        <button type="submit" onclick="adicionarDisciplina()">Adicionar Disciplina</button>
+      </form>
+    </div>
+  
+    <div class="container">
+      <h2>Adicionar Avaliação</h2>
+      <form>
+        <label for="codigoAvaliacao">Código da disciplina:</label>
+        <input type="text" id="codigoAvaliacao" name="codigoAvaliacao" required>
+  
+        <label for="tipo">Tipo da avaliação:</label>
+        <input type="text" id="tipo" name="tipo" required>
+  
+        <label for="data">Data da avaliação:</label>
+        <input type="date" id="data" name="data" required>
+  
+        <label for="peso">Peso da avaliação:</label>
+        <input type="number" id="peso" name="peso" required>
+  
+        <label for="nota">Nota da avaliação:</label>
+        <input type="number" id="nota" name="nota" required>
+  
+        <button type="submit" onclick="adicionarAvaliacao()">Adicionar Avaliação</button>
+      </form>
+    </div>
+  
+    <div class="container">
+      <h2>Calcular Média</h2>
+      <form>
+        <label for="codigoMedia">Código da disciplina:</label>
+        <input type="text" id="codigoMedia" name="codigoMedia" required>
+        <button type="submit" onclick="calcularMedia()">Calcular Média</button>
+      </form>
+      <div id="resultado"></div>
+      <script src="resultado.js"></script>
+    </div>
+  </main>
+  
+  <script src="gradetrade.js"></script>
+</body>
+</html>
