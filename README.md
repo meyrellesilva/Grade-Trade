@@ -3,7 +3,7 @@ Códigos de rastreamento de notas.  Ainda em processo.
 
 # O que podemos encontrar:
 
-Adicionamento de disciplinas, de avaliações e calculo médio das notas.
+Adicionamento de disciplinas (código, nome do docente) e a data de início e de término, de avaliações (data, peso, nota) e calculo médio das notas com base nos dados preenchidos.
 
 # O que falta implementar:
 
